@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="styles.css"/>
+
+
+<title>freeCodeCamp Survey Form</title>
+</head>
+
+
+
+<body>
+  <h1 id="title">
+    freeCodeCamp Survey Form
+  </h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+  <form id="survey-form" >
+    <h3>Name</h3><input id="name" type="text" required placeholder="Enter your name"><label id="name-label"></input>
+
+    <h3>Email</h3><input id="email" type="email" required placeholder="Enter your email"><label id="email-label"></input>
+
+
+    <h3>Age (optional)</h3><input id="number" type="number" min="1" max="100" placeholder="Enter your age"><label id="number-label"></input>
+
+
+    <h3>Which option best describes your current role?</h3><select id="dropdown">
+      <option>Select current role</option>
+      <option>Student</option>
+      <option>Full Time Job</option>
+      <option>Full Time Learner</option>
+      <option>Prefer not to say</option>
+      <option>Other</option>
+    </select>
+
+<h3>Would you recommend freeCodeCamp to a friend?</h3>
+    <input name="recommendation" type="radio" value="Definitely">Definitely</input>
+    <input name="recommendation" type="radio" value="Maybe">Maybe</input>
+    <input name="recommendation" type="radio" value="Not sure">Not sure</input>
+
+    <h3>What is your favorite feature of freeCodeCamp?</h3><select id="dropdown">
+      <option>Select an option</option>
+      <option>Challenges</option>
+      <option>Projects</option>
+      <option>Community</option>
+      <option>Open Source</option>
+    </select>
+
+<h3>What would you like too see improved?(Check all that apply)</h3>
+    <input type="checkbox" value="Front-end Projects">Front-end Projects</input>
+    <input type="checkbox" value="Back-end Projects">Back-end Projects</input>
+    <input type="checkbox" value="Data Visualization">Data Visualization</input>
+    <input type="checkbox" value="Challenges">Challenges</input>
+    <input type="checkbox" value="Open Course Community">Open Source Community</input>
+    <input type="checkbox" value="Gitter help rooms">Gitter help rooms</input>
+    <input type="checkbox" value="Videos">Videos</input>
+    <input type="checkbox" value="City Meetups">City Meetups</input>
+    <input type="checkbox" value="Wiki">Wiki</input>
+    <input type="checkbox" value="Forum">Forum</input>
+    <input type="checkbox" value="Additional Courses">Additional Courses</input>
+
+  <h3>Any comment or suggestions?</h3><textarea>Enter your comment here...</textarea>
+    
+<button id="submit">Submit</button>
+  </form>
+
+</body>
+
+
+</html>
